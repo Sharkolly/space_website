@@ -1,0 +1,672 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  background: #242424;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+div.overall-container div.header {
+  background: linear-gradient(45deg, rgba(10, 11, 11, 0.9), rgba(27, 27, 27, 0.3)), url("pexels-pixabay-355465.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+div.overall-container div.header header {
+  width: 90%;
+  margin-inline: auto;
+  position: relative;
+}
+
+div.overall-container div.header header div.nav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.overall-container div.header header div.nav-flex div.logo svg {
+  width: 74px;
+}
+
+div.overall-container div.header header div.nav-flex nav svg {
+  display: none;
+}
+
+div.overall-container div.header header div.nav-flex nav ul.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  gap: 0.2em;
+}
+
+div.overall-container div.header header div.nav-flex nav ul.nav-bar li {
+  padding: 1em 3.5em;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+div.overall-container div.header header div.nav-flex nav ul.nav-bar li:hover {
+  text-decoration: underline;
+}
+
+div.overall-container div.header header div.header-middle-content {
+  margin-top: 7em;
+}
+
+div.overall-container div.header header div.header-middle-content h1 {
+  font-size: 6rem;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+
+div.overall-container div.header header div.header-middle-content p {
+  text-transform: uppercase;
+  color: rgba(165, 165, 165, 0.87);
+  letter-spacing: 1.3px;
+  font-size: 1.4rem;
+}
+
+div.overall-container div.header header div.header-middle-content div {
+  width: 2.4%;
+  height: 2px;
+  background: rgba(165, 165, 165, 0.87);
+  border-radius: 5px;
+}
+
+div.overall-container div.header header div.header-closing-content {
+  position: absolute;
+  top: 160%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+div.overall-container div.header header div.header-closing-content h1 {
+  font-size: calc(3rem - 1vw);
+  color: rgba(200, 200, 200, 0.87);
+  margin: 0;
+}
+
+div.overall-container div.header header div.header-closing-content p {
+  text-transform: uppercase;
+  color: rgba(165, 165, 165, 0.87);
+  letter-spacing: 1.2px;
+  font-size: .66rem;
+  margin-top: 10px;
+}
+
+div.overall-container div.header header div.header-closing-content div.h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.overall-container div.header header div.header-closing-content div.h span {
+  width: 2.4%;
+  height: 2px;
+  background: rgba(165, 165, 165, 0.47);
+  border-radius: 19px;
+}
+
+div.overall-container div.header header div.closing-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.overall-container div.header header div.closing-content h4 {
+  font-weight: normal;
+  min-width: 420px;
+  width: 90%;
+  max-width: 750px;
+  margin-inline: auto;
+  color: rgba(165, 165, 165, 0.67);
+  font-size: .93em;
+}
+
+div.overall-container a.smooth {
+  text-decoration: none;
+  color: white;
+}
+
+div.overall-container div.conn {
+  width: 90%;
+  margin-inline: auto;
+}
+
+div.overall-container div.conn section.article div.article-title {
+  text-align: center;
+  margin-top: 60px;
+}
+
+div.overall-container div.conn section.article div.article-title h2 {
+  font-size: 2.7rem;
+  margin-bottom: 5px;
+}
+
+div.overall-container div.conn section.article div.article-title p {
+  text-transform: uppercase;
+  color: rgba(165, 165, 165, 0.47);
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
+  margin-top: 6px;
+}
+
+div.overall-container div.conn section.article div.article-title div.h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.overall-container div.conn section.article div.article-title div.h span {
+  width: 2.4%;
+  height: 2px;
+  background: rgba(165, 165, 165, 0.47);
+  border-radius: 19px;
+}
+
+div.overall-container div.conn section.article div.article-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1.3em;
+  margin-top: 48px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.overall-container div.conn section.article div.article-images div.first,
+div.overall-container div.conn section.article div.article-images div.sec,
+div.overall-container div.conn section.article div.article-images div.third {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 31%;
+          flex: 1 1 31%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 4px 15px 1px black;
+          box-shadow: 0 4px 15px 1px black;
+  position: relative;
+  cursor: pointer;
+}
+
+div.overall-container div.conn section.article div.article-images div.first:hover,
+div.overall-container div.conn section.article div.article-images div.sec:hover,
+div.overall-container div.conn section.article div.article-images div.third:hover {
+  opacity: 0.8;
+}
+
+div.overall-container div.conn section.article div.article-images div.first div.content,
+div.overall-container div.conn section.article div.article-images div.sec div.content,
+div.overall-container div.conn section.article div.article-images div.third div.content {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+div.overall-container div.conn section.article div.article-images div.first div.content h2,
+div.overall-container div.conn section.article div.article-images div.sec div.content h2,
+div.overall-container div.conn section.article div.article-images div.third div.content h2 {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+div.overall-container div.conn section.article div.article-images div.first div.content p,
+div.overall-container div.conn section.article div.article-images div.sec div.content p,
+div.overall-container div.conn section.article div.article-images div.third div.content p {
+  letter-spacing: 1.5px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: rgba(165, 165, 165, 0.87);
+  margin: 0;
+  margin-top: 10px;
+}
+
+div.overall-container div.conn section.article div.article-images div.first div.content div.h,
+div.overall-container div.conn section.article div.article-images div.sec div.content div.h,
+div.overall-container div.conn section.article div.article-images div.third div.content div.h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+div.overall-container div.conn section.article div.article-images div.first div.content div.h span,
+div.overall-container div.conn section.article div.article-images div.sec div.content div.h span,
+div.overall-container div.conn section.article div.article-images div.third div.content div.h span {
+  width: 30px;
+  height: 2px;
+  background: rgba(165, 165, 165, 0.47);
+  border-radius: 19px;
+}
+
+div.overall-container div.conn section.article div.article-images div.first {
+  background: linear-gradient(45deg, rgba(10, 11, 11, 0.9), rgba(27, 27, 27, 0.3)), url("Beyond Your Imagination - Redefined.jfif");
+}
+
+div.overall-container div.conn section.article div.article-images div.sec {
+  background: linear-gradient(45deg, rgba(10, 11, 11, 0.9), rgba(27, 27, 27, 0.3)), url("Pin by Janusz Jabłoński on Phone Wallpaper _ Wallpaper space, Galaxy painting, Light background images em 2022 _ Ilustração do espaço, Fotos de galáxias, Pintura do espaço.jfif");
+}
+
+div.overall-container div.conn section.article div.article-images div.third {
+  background: linear-gradient(45deg, rgba(10, 11, 11, 0.9), rgba(27, 27, 27, 0.3)), url("World wallpaper - Wallpaper.jfif");
+}
+
+div.overall-container div.cover {
+  background: black;
+}
+
+div.overall-container div.cover section.subscribe {
+  width: 90%;
+  margin-inline: auto;
+}
+
+div.overall-container div.cover section.subscribe div.sub {
+  margin-top: 100px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+div.overall-container div.cover section.subscribe div.sub h1 {
+  font-size: 2.7rem;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+div.overall-container div.cover section.subscribe div.sub p {
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgba(165, 165, 165, 0.87);
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+div.overall-container div.cover section.subscribe div.sub div.h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.overall-container div.cover section.subscribe div.sub div.h span {
+  width: 2.4%;
+  height: 2px;
+  background: rgba(165, 165, 165, 0.47);
+  border-radius: 19px;
+}
+
+div.overall-container div.cover section.subscribe div.sub form {
+  width: 100%;
+  margin-inline: auto;
+  margin-top: 2em;
+}
+
+div.overall-container div.cover section.subscribe div.sub form input.text {
+  width: 30%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.389);
+  height: 30px;
+  border-radius: 4px;
+  padding-left: 20px;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  color: white;
+}
+
+div.overall-container div.cover section.subscribe div.sub form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.overall-container div.cover section.subscribe div.sub form div input.btn {
+  display: block;
+  padding: 0.5em 2.1em;
+  border-radius: 6px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.691);
+  margin-top: 1em;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+div.overall-container div.cover section.subscribe div.sub form div input.btn:hover {
+  background: white;
+  color: black;
+  border: none;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+  opacity: 0.9;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+
+div.overall-container footer {
+  margin-top: 1.2rem;
+  width: 90%;
+  margin-inline: auto;
+}
+
+div.overall-container footer div.nav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.overall-container footer div.nav-flex div.logo svg {
+  width: 60px;
+}
+
+div.overall-container footer div.nav-flex nav svg {
+  display: none;
+}
+
+div.overall-container footer div.nav-flex nav ul.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  gap: 0.2em;
+}
+
+div.overall-container footer div.nav-flex nav ul.nav-bar li {
+  padding: 1em 3.5em;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media (max-width: 770px) {
+  body {
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
+  div.overall-container div.header header {
+    position: relative;
+  }
+  div.overall-container div.header header div.nav-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  div.overall-container div.header header div.nav-flex div.logo {
+    margin: 0;
+  }
+  div.overall-container div.header header div.nav-flex div.logo svg {
+    width: 65px;
+    margin-top: -10px;
+  }
+  div.overall-container div.header header div.nav-flex nav {
+    position: relative;
+  }
+  div.overall-container div.header header div.nav-flex nav svg.open {
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 0px;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    top: 15px;
+    opacity: 0.9;
+  }
+  div.overall-container div.header header div.nav-flex nav ul.remove {
+    display: none;
+  }
+  div.overall-container div.header header div.nav-flex nav ul.nav-bar {
+    background: black;
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    width: 100%;
+    gap: 0;
+    margin: 0;
+    height: 100vh;
+    z-index: 3;
+    display: none;
+  }
+  div.overall-container div.header header div.nav-flex nav ul.nav-bar svg.close {
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    right: 0;
+    top: 3px;
+  }
+  div.overall-container div.header header div.nav-flex nav ul.nav-bar svg.close path {
+    fill: white;
+  }
+  div.overall-container div.header header div.nav-flex nav ul.nav-bar li {
+    margin: 7em 0em;
+    padding: 0;
+    padding-left: 1em;
+  }
+  div.overall-container div.header header div.header-middle-content h1 {
+    font-size: 4.6rem;
+  }
+  div.overall-container div.header header div.header-middle-content p {
+    font-size: 1.1rem;
+  }
+  div.overall-container div.header header div.header-middle-content div {
+    width: 33px;
+  }
+  div.overall-container div.header header div.header-closing-content {
+    top: 185%;
+  }
+  div.overall-container div.header header div.header-closing-content div.h span {
+    width: 28px;
+  }
+  div.overall-container div.header header div.closing-content h4 {
+    font-size: .7em;
+  }
+  div.overall-container div.conn {
+    width: 95%;
+    margin-inline: auto;
+  }
+  div.overall-container div.conn section.article div.article-title h2 {
+    font-size: 2.3em;
+    opacity: 0.8;
+  }
+  div.overall-container div.conn section.article div.article-title p {
+    font-size: 0.9rem;
+  }
+  div.overall-container div.conn section.article div.article-title div.h span {
+    width: 30px;
+  }
+  div.overall-container div.conn section.article div.article-images {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1.5em;
+  }
+  div.overall-container div.conn section.article div.article-images div.first,
+  div.overall-container div.conn section.article div.article-images div.sec,
+  div.overall-container div.conn section.article div.article-images div.third {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 95%;
+            flex: 1 1 95%;
+    width: 95%;
+  }
+  div.overall-container div.conn section.article div.article-images div.first:hover,
+  div.overall-container div.conn section.article div.article-images div.sec:hover,
+  div.overall-container div.conn section.article div.article-images div.third:hover {
+    opacity: 1;
+  }
+  div.overall-container div.conn section.article div.article-images div.first div.content,
+  div.overall-container div.conn section.article div.article-images div.sec div.content,
+  div.overall-container div.conn section.article div.article-images div.third div.content {
+    bottom: 0px;
+  }
+  div.overall-container div.conn section.article div.article-images div.first div.content h2,
+  div.overall-container div.conn section.article div.article-images div.sec div.content h2,
+  div.overall-container div.conn section.article div.article-images div.third div.content h2 {
+    font-size: 1.6rem;
+    opacity: 0.79;
+  }
+  div.overall-container div.conn section.article div.article-images div.first div.content P,
+  div.overall-container div.conn section.article div.article-images div.sec div.content P,
+  div.overall-container div.conn section.article div.article-images div.third div.content P {
+    font-size: 0.86rem;
+    letter-spacing: 1.2px;
+    opacity: 0.7;
+  }
+  div.overall-container div.conn section.article div.article-images div.first div.content div.h span,
+  div.overall-container div.conn section.article div.article-images div.sec div.content div.h span,
+  div.overall-container div.conn section.article div.article-images div.third div.content div.h span {
+    width: 20px;
+    border-radius: 19px;
+  }
+  div.overall-container div.cover section.subscribe div.sub h1 {
+    font-size: 2.2rem;
+    opacity: 0.78;
+  }
+  div.overall-container div.cover section.subscribe div.sub p {
+    font-size: 0.75rem;
+  }
+  div.overall-container div.cover section.subscribe div.sub div.h span {
+    width: 30px;
+  }
+  div.overall-container div.cover section.subscribe div.sub form input.text {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  div.overall-container div.cover section.subscribe div.sub form div input.btn:hover {
+    background: black;
+    color: white;
+    letter-spacing: 1.04px;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+  }
+  div.overall-container footer {
+    margin-top: 1.2rem;
+    width: 95%;
+    margin-inline: auto;
+  }
+  div.overall-container footer div.nav-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  div.overall-container footer div.nav-flex div.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: none;
+  }
+  div.overall-container footer div.nav-flex div.logo svg {
+    width: 55px;
+  }
+  div.overall-container footer div.nav-flex nav ul.nav-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    color: #eee;
+  }
+  div.overall-container footer div.nav-flex nav ul.nav-bar li {
+    margin-top: 1.8em;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  div.overall-container footer div.nav-flex nav ul.nav-bar li:hover {
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=space Web.css.map */
